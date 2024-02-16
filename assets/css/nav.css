@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+.logo{
+    position: fixed;
+    top:36px;
+    left: 40px;
+    z-index: 10;
+    color: #fff;
+}
+
+.gnbMenu.active{
+    mix-blend-mode: difference;
+    color: #818181;
+}
+
+.gnbMenu{
+    position: fixed;
+    top:36px;
+    left: 40px;
+    z-index: 10;
+    color: #fff;
+    
+    
+}
+
+.gnbMenu .inner{
+    position: relative;
+    display: flex;
+    width: 1518px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gnbMenu .list{
+    display: flex;
+}
+.gnbMenu .list > li{
+    font-size: 16px;
+    margin-right: 60px;
+    
+}
+
+.gnbMenu .util{
+    position: absolute;
+    right: 0;
+}
+
+.gnbMenu .util li{
+    margin-left: 24px;
+}
+
+
+.nav-wrap{display: none;}
+.nav-timeline{
+    display: flex;
+    justify-content: space-between;
+    width: 1558px;
+    position: fixed;
+    left: 0;
+    bottom:18px;
+    z-index: 10;
+    mix-blend-mode: difference;
+}
+
+.nav-timeline .nav-list{
+    position: relative;
+    width: 1218px;
+}
+
+.nav-wrap .sns{
+    position: fixed;
+    bottom: 25px;
+    right: 4%;
+    z-index: 10;
+    display: flex;
+    mix-blend-mode: difference;
+    width: 118px;
+    justify-content: space-between;
+}
+
+.nav-wrap .sns .fa-brands {
+    display: inline-block;
+    font-size: 26px;
+    color: #fff;
+}
+
+.nav-timeline .nav-list > ul{
+    display: flex;
+}
+
+.nav-timeline .nav-list > ul > li{
+    position: relative;
+    text-align: center;
+    height: 38px;
+    text-transform: uppercase;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s linear;
+    opacity: 0.7;
+}
+
+.nav-timeline .nav-list > ul > li .text{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+}
+
+
+.nav-timeline .nav-list > ul > li .progressbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    transition: all 0.8s ease-in;
+}
+
+.nav-timeline .nav-list > ul > li.active .progressbar {
+    transform: scaleX(1);
+}
+
+/* @keyframes bar-ani{
+    from{transform: scaleX(0);}
+    to{transform: scaleX(1);}
+} */
